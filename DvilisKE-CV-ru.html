@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Кирилл Двилис — Резюме</title>
+<style>
+
+  @page {
+    size: A4;
+    margin: 10mm 13mm 10mm 13mm;
+  }
+  body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #111827;
+    background: #ffffff;
+    line-height: 1.25;
+    font-size: 8.4pt;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 17pt;
+    font-weight: bold;
+    margin: 0 0 1.5pt 0;
+    text-align: center;
+    color: #000000;
+    letter-spacing: 0.3px;
+  }
+  .role-title {
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    color: #374151;
+    margin: 0 0 3pt 0;
+  }
+  .contacts {
+    text-align: center;
+    font-size: 8.2pt;
+    color: #4b5563;
+    margin-bottom: 6pt;
+    padding-bottom: 3.5pt;
+    border-bottom: 1.5px solid #111827;
+  }
+  .contacts a {
+    color: #111827;
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 9.5pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    border-bottom: 1px solid #4b5563;
+    margin: 6.5pt 0 2.5pt 0;
+    padding-bottom: 1pt;
+    letter-spacing: 0.3px;
+  }
+  p {
+    margin: 0 0 3pt 0;
+    text-align: justify;
+  }
+  .skills-list {
+    margin: 0 0 4.5pt 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  .skills-list li {
+    margin-bottom: 1.5pt;
+    text-align: left;
+  }
+  .job-block {
+    margin-top: 4pt;
+    margin-bottom: 3.5pt;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .job-title-line {
+    font-size: 9.2pt;
+    font-weight: bold;
+    color: #000000;
+  }
+  .job-meta-line {
+    font-size: 8.2pt;
+    color: #4b5563;
+    margin-bottom: 1.5pt;
+  }
+  ul.job-bullets {
+    margin: 1pt 0 3pt 0;
+    padding-left: 13pt;
+  }
+  ul.job-bullets li {
+    margin-bottom: 1.5pt;
+    text-align: justify;
+  }
+
+</style>
+</head>
+<body>
+  <h1>КИРИЛЛ ДВИЛИС</h1>
+  <div class="role-title">DevOps · Platform Engineer</div>
+  <div class="contacts">
+    Full Remote &bull; +7 (913) 099-00-79 &bull; <a href="mailto:x6y9kax@gmail.com">x6y9kax@gmail.com</a> &bull; Telegram: <a href="https://t.me/x6y9kax">@x6y9kax</a>
+  </div>
+
+  <h2>Обо мне</h2>
+  <p>Platform / DevOps Engineer с 5 годами коммерческого опыта в DevOps и фундаментальным бэкграундом в системном администрировании. Специализируюсь на проектировании отказоустойчивых Kubernetes-платформ (bare-metal и cloud), внедрении GitOps (ArgoCD, Flux), Infrastructure as Code (OpenTofu, Ansible) и комплексного Observability. Разрабатываю платформенные сервисы автоматизации (IDP / релизный тулинг) и применяю AI-Augmented Ops (Claude Code, MCP) для ускорения инцидент-менеджмента и рутинных задач.</p>
+
+  <h2>Технический стек</h2>
+  <ul class="skills-list">
+    <li><b>Оркестрация и контейнеризация:</b> Kubernetes, Docker, Helm, Kustomize, ArgoCD, Flux CD, Longhorn</li>
+    <li><b>Сетевой слой & Трафик:</b> Kubernetes Gateway API, HAProxy, Cloudflare</li>
+    <li><b>Observability & Alerting:</b> Prometheus, VictoriaMetrics, VictoriaLogs, Grafana, Coroot, Vector, Loki, Alertmanager, PagerDuty</li>
+    <li><b>IaC & Cloud:</b> OpenTofu, Terraform, Ansible, Puppet, AWS, DigitalOcean</li>
+    <li><b>CI/CD, DevSecOps & AI:</b> GitLab CI, GitHub Actions, Kyverno, Trivy, Sealed Secrets, HashiCorp Vault, Claude Code, MCP</li>
+  </ul>
+
+  <h2>Опыт работы</h2>
+
+  <div class="job-block">
+    <div class="job-title-line">Icons8 - DevOps / Platform Engineer</div>
+    <div class="job-meta-line">США (Remote) | Июнь 2025 - настоящее время</div>
+    <ul class="job-bullets">
+      <li><b>Платформенная архитектура:</b> Развиваю и поддерживаю платформенную инфраструктуру: основной bare-metal Kubernetes-кластер (14 нод: 3 master, 11 worker; 1200+ подов) и ML-кластер (5 нод).</li>
+      <li><b>Self-Service GitOps & Platform Tooling:</b> Разработал внутренний сервис авторизованной доставки релизов из GitLab CI в GitOps-репозиторий: ушла необходимость ждать DevOps для выкатки, релиз доставляется практически мгновенно по webhook в ArgoCD (digest pinning для stage, semver-теги для prod с мгновенным rollback).</li>
+      <li><b>Эволюция сети (Gateway API):</b> Проектирую и провожу миграцию сетевого стека с legacy Ingress на Kubernetes Gateway API для разделения зон ответственности маршрутизации (infra vs dev) и гибкого управления трафиком.</li>
+      <li><b>Hybrid Infrastructure (IaC):</b> Управляю гибридной средой на базе AWS (EC2, IAM, S3, Route53), Cloudflare и bare-metal серверов; описываю облачные ресурсы как код через OpenTofu, провожу ревизию и оптимизацию инфраструктурных ресурсов.</li>
+      <li><b>GitOps Стандарт & Self-Healing:</b> Спроектировал доставку на ArgoCD (паттерн App-of-Apps). Перевел кластеры под GitOps, полностью устранив ручные выкатки через kubectl и снизив влияние человеческого фактора.</li>
+      <li><b>DevSecOps Baseline:</b> Внедрил Kyverno-политики (валидация конфигураций, мутации) и настроил регулярное сканирование контейнерных образов через Trivy; обеспечил безопасное хранение секретов в Git через Sealed Secrets.</li>
+      <li><b>AI-Augmented Operations:</b> Внедрил внутренний workflow на базе Claude Code и MCP с guardrails: пропускная способность команды выросла с ~20 до 50+ story points на человека в спринт, инциденты и постмортемы фиксируются и создаются автоматически.</li>
+    </ul>
+  </div>
+
+  <div class="job-block">
+    <div class="job-title-line">Центр Финансовых Технологий (ЦФТ) — Инженер по автоматизации / DevOps</div>
+    <div class="job-meta-line">Россия | Апр 2023 — Май 2025 (2 года 2 мес)</div>
+    <ul class="job-bullets">
+      <li><b>Масштабный On-Premise Kubernetes:</b> Эксплуатировал production и stage K8s-кластеры (по 30+ нод каждый). Обеспечивал высокую доступность, участвовал в разборе инцидентов высокой критичности (P1/P2).</li>
+      <li><b>GitOps & Helm:</b> Поддерживал непрерывную GitOps-синхронизацию кластеров через Flux CD; разрабатывал и оптимизировал продуктовые Helm-чарты.</li>
+      <li><b>CI/CD пайплайны:</b> Проектировал и сопровождал автоматизированные пайплайны сборки, тестирования и выкатки сервисов в Jenkins и GitLab CI.</li>
+      <li><b>Observability & Security:</b> Развивал стек мониторинга (Prometheus, Alertmanager, Grafana, ELK Stack, Zabbix); администрировал HashiCorp Vault и ролевую модель доступа (RBAC).</li>
+    </ul>
+  </div>
+
+  <p style="page-break-before: always; margin: 0; padding: 0; line-height: 1pt; font-size: 1pt;">&nbsp;</p>
+
+  <h2>Опыт работы (продолжение)</h2>
+
+  <div class="job-block">
+    <div class="job-title-line">Weje (HyperTech Inc., New York) — DevOps-инженер / Инженер платформы</div>
+    <div class="job-meta-line">США (Remote) | Окт 2021 — Янв 2023 (1 год 4 мес)</div>
+    <ul class="job-bullets">
+      <li><b>Инфраструктура с нуля:</b> Отвечал за всю инфраструктуру платформы: спроектировал и развернул кластерную среду с нуля, мигрировав 30+ продуктовых и инфраструктурных сервисов из Docker Compose в DigitalOcean Managed Kubernetes.</li>
+      <li><b>GitOps Delivery:</b> Выстроил сквозной цикл поставки приложений на базе GitHub Actions, Kustomize и ArgoCD, обеспечив быстрый и предсказуемый релизный цикл.</li>
+      <li><b>Observability стек:</b> С нуля развернул стек телеметрии: Loki + VictoriaMetrics + Grafana; настроил централизованную доставку алертов для инженерной команды.</li>
+    </ul>
+  </div>
+
+  <div class="job-block">
+    <div class="job-title-line">Ранний инженерный опыт — Системный администратор</div>
+    <div class="job-meta-line">Россия | 2010 — 2021 (11 лет)</div>
+    <ul class="job-bullets">
+      <li><b>1С - Корпоративные системы управления (2020–2021):</b> Системный администратор. Сопровождение серверной инфраструктуры, автоматизация задач обслуживания на Bash, мониторинг доступности корпоративных служб.</li>
+      <li><b>Алькон / Сервис-Провайдер (2010–2020):</b> Системный администратор. Администрирование Windows Server, Active Directory, виртуализации, резервного копирования и сетевой инфраструктуры.</li>
+    </ul>
+  </div>
+
+  <h2>Образование</h2>
+  <p><b>Высшее образование:</b> Алтайский государственный технический университет им. И.И. Ползунова (АлтГТУ), Факультет информационных технологий (2008).</p>
+
+  <h2>Языки</h2>
+  <p><b>Русский:</b> Родной &bull; <b>Английский:</b> B1 (Intermediate)</p>
+</body>
+</html>

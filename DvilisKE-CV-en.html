@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kirill Dvilis — Resume</title>
+<style>
+
+  @page {
+    size: A4;
+    margin: 10mm 13mm 10mm 13mm;
+  }
+  body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #111827;
+    background: #ffffff;
+    line-height: 1.25;
+    font-size: 8.4pt;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 17pt;
+    font-weight: bold;
+    margin: 0 0 1.5pt 0;
+    text-align: center;
+    color: #000000;
+    letter-spacing: 0.3px;
+  }
+  .role-title {
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    color: #374151;
+    margin: 0 0 3pt 0;
+  }
+  .contacts {
+    text-align: center;
+    font-size: 8.2pt;
+    color: #4b5563;
+    margin-bottom: 6pt;
+    padding-bottom: 3.5pt;
+    border-bottom: 1.5px solid #111827;
+  }
+  .contacts a {
+    color: #111827;
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 9.5pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    border-bottom: 1px solid #4b5563;
+    margin: 6.5pt 0 2.5pt 0;
+    padding-bottom: 1pt;
+    letter-spacing: 0.3px;
+  }
+  p {
+    margin: 0 0 3pt 0;
+    text-align: justify;
+  }
+  .skills-list {
+    margin: 0 0 4.5pt 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  .skills-list li {
+    margin-bottom: 1.5pt;
+    text-align: left;
+  }
+  .job-block {
+    margin-top: 4pt;
+    margin-bottom: 3.5pt;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .job-title-line {
+    font-size: 9.2pt;
+    font-weight: bold;
+    color: #000000;
+  }
+  .job-meta-line {
+    font-size: 8.2pt;
+    color: #4b5563;
+    margin-bottom: 1.5pt;
+  }
+  ul.job-bullets {
+    margin: 1pt 0 3pt 0;
+    padding-left: 13pt;
+  }
+  ul.job-bullets li {
+    margin-bottom: 1.5pt;
+    text-align: justify;
+  }
+
+</style>
+</head>
+<body>
+  <h1>KIRILL DVILIS</h1>
+  <div class="role-title">DevOps · Platform Engineer</div>
+  <div class="contacts">
+    Full Remote &bull; +7 (913) 099-00-79 &bull; <a href="mailto:x6y9kax@gmail.com">x6y9kax@gmail.com</a> &bull; Telegram: <a href="https://t.me/x6y9kax">@x6y9kax</a>
+  </div>
+
+  <h2>About Me</h2>
+  <p>Platform / DevOps Engineer with 5 years of commercial DevOps experience and a solid systems engineering background. Specialized in designing resilient Kubernetes platforms (bare-metal and cloud), adopting GitOps (ArgoCD, Flux), Infrastructure as Code (OpenTofu, Ansible), and end-to-end Observability. Build internal developer platform tooling and release workflows; leverage AI-Augmented Operations (Claude Code, MCP) to streamline incident triage, metrics analysis, and operations.</p>
+
+  <h2>Technical Skills</h2>
+  <ul class="skills-list">
+    <li><b>Orchestration & Containers:</b> Kubernetes, Docker, Helm, Kustomize, ArgoCD, Flux CD, Longhorn</li>
+    <li><b>Networking & Traffic:</b> Kubernetes Gateway API, HAProxy, Cloudflare</li>
+    <li><b>Observability & Alerting:</b> Prometheus, VictoriaMetrics, VictoriaLogs, Grafana, Coroot, Vector, Loki, Alertmanager, PagerDuty</li>
+    <li><b>IaC & Cloud Infrastructure:</b> OpenTofu, Terraform, Ansible, Puppet, AWS, DigitalOcean</li>
+    <li><b>CI/CD, DevSecOps & AI:</b> GitLab CI, GitHub Actions, Kyverno, Trivy, Sealed Secrets, HashiCorp Vault, Claude Code, MCP</li>
+  </ul>
+
+  <h2>Experience</h2>
+
+  <div class="job-block">
+    <div class="job-title-line">Icons8 - DevOps / Platform Engineer</div>
+    <div class="job-meta-line">US / Remote | Jun 2025 - Present</div>
+    <ul class="job-bullets">
+      <li><b>Platform Architecture:</b> Manage and evolve core platform infrastructure: bare-metal Kubernetes cluster (14 nodes: 3 master, 11 worker; 1,200+ pods) and a 5-node ML cluster.</li>
+      <li><b>Self-Service GitOps & Platform Tooling:</b> Built an internal service for authorized release delivery from GitLab CI to GitOps repositories: eliminated DevOps deployment bottlenecks with near-instant webhook rollouts into ArgoCD (digest pinning for stage, semver tags for prod with instant rollbacks).</li>
+      <li><b>Network Evolution (Gateway API):</b> Designing and executing migration from legacy Ingress to Kubernetes Gateway API, separating routing ownership (infra vs dev) and enabling advanced traffic control.</li>
+      <li><b>Hybrid Infrastructure (IaC):</b> Manage hybrid infrastructure across AWS (EC2, IAM, S3, Route53), Cloudflare, and bare-metal nodes; codified cloud resources via OpenTofu and conduct ongoing resource optimization.</li>
+      <li><b>GitOps Standards & Self-Healing:</b> Engineered GitOps delivery via ArgoCD (App-of-Apps pattern). Eliminated manual kubectl rollouts across clusters, minimizing human operational error.</li>
+      <li><b>DevSecOps Baseline:</b> Enforced admission policies and schema mutations via Kyverno; automated vulnerability scanning with Trivy; secured sensitive secrets in Git using Sealed Secrets.</li>
+      <li><b>AI-Augmented Operations:</b> Implemented an internal engineering workflow using Claude Code and MCP with strict guardrails: team sprint throughput grew from ~20 to 50+ story points per engineer, with automated incident capture and postmortem creation.</li>
+    </ul>
+  </div>
+
+  <div class="job-block">
+    <div class="job-title-line">CFT (Center of Financial Technologies) — DevOps / Infrastructure Engineer</div>
+    <div class="job-meta-line">Russia | Apr 2023 — May 2025 (2 yrs 2 mos)</div>
+    <ul class="job-bullets">
+      <li><b>Large-Scale On-Premise Kubernetes:</b> Operated high-availability production and staging K8s clusters (30+ nodes each). Maintained platform resilience and participated in P1/P2 incident resolution.</li>
+      <li><b>GitOps & Helm:</b> Maintained continuous GitOps cluster synchronization via Flux CD; developed, packaged, and optimized production Helm charts for microservices.</li>
+      <li><b>CI/CD Pipelines:</b> Architected and maintained automated build, test, and release delivery pipelines in GitLab CI and Jenkins.</li>
+      <li><b>Observability & Security:</b> Extended monitoring stack (Prometheus, Alertmanager, Grafana, ELK Stack, Zabbix); administered HashiCorp Vault secrets management and RBAC access policies.</li>
+    </ul>
+  </div>
+
+  <p style="page-break-before: always; margin: 0; padding: 0; line-height: 1pt; font-size: 1pt;">&nbsp;</p>
+
+  <h2>Experience (Continued)</h2>
+
+  <div class="job-block">
+    <div class="job-title-line">Weje (HyperTech Inc., New York) — DevOps / Platform Engineer</div>
+    <div class="job-meta-line">US / Remote | Oct 2021 — Jan 2023 (1 yr 4 mos)</div>
+    <ul class="job-bullets">
+      <li><b>Infrastructure from Scratch:</b> Owned end-to-end platform infrastructure: designed and launched clustered environment, migrating 30+ application and infrastructure services from Docker Compose to DigitalOcean Managed Kubernetes.</li>
+      <li><b>GitOps Delivery:</b> Established continuous delivery cycle based on GitHub Actions, Kustomize, and ArgoCD, ensuring predictable and rapid release cycles.</li>
+      <li><b>Observability Stack:</b> Deployed telemetry stack from scratch: Loki + VictoriaMetrics + Grafana; configured centralized alerting for the engineering team.</li>
+    </ul>
+  </div>
+
+  <div class="job-block">
+    <div class="job-title-line">Early Engineering Experience — Systems Administrator</div>
+    <div class="job-meta-line">Russia | 2010 — 2021 (11 yrs)</div>
+    <ul class="job-bullets">
+      <li><b>1C - Corporate Management Systems (2020–2021):</b> Systems Administrator. Maintained server fleet, bash automation, corporate network services.</li>
+      <li><b>Alcon / IT Service Provider (2010–2020):</b> Systems Administrator. Managed Windows Server, Active Directory, virtualization platforms, backup systems, and enterprise networking.</li>
+    </ul>
+  </div>
+
+  <h2>Education</h2>
+  <p><b>Higher Education:</b> Polzunov Altai State Technical University, Faculty of Information Technology (2008).</p>
+
+  <h2>Languages</h2>
+  <p><b>Russian:</b> Native &bull; <b>English:</b> B1 (Intermediate / Working Proficiency)</p>
+</body>
+</html>
